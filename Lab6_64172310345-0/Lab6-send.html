@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+
+    <style>
+      .boxin {
+        display: flex;
+        justify-content: center;
+      }
+
+      .myform {
+        width: 400px;
+        background-color: aqua;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .row {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 30px;
+      }
+
+      label {
+        width: 100px;
+      }
+
+      /* .sex{
+        
+      } */
+
+      .buttom {
+        width: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxout" style="background-color: aqua">
+      <div class="boxin" style="background-color: bisque">
+        <br />
+
+        <form class="myform" method="post" action="Lab6-receive.php" enctype="multipart/form-data">
+          <h2>แบบฟอร์มการรับสมัครงาน</h2>
+          <div class="row">
+            <label for="">คำนำหน้า</label>
+            <select name="title" id="">
+              <option value="นาย">นาย</option>
+              <option value="นาง">นาง</option>
+              <option value="นางสาว">นางสาว</option>
+            </select>
+          </div>
+          <br />
+
+          <div class="row">
+            <label for="fname">ชื่อ:</label>
+            <input type="text" id="" name="fname" />
+          </div>
+          <br />
+
+          <div class="row">
+            <label for="lname">นามสกุล:</label>
+            <input type="text" id="" name="lname" />
+          </div>
+          <br />
+
+          <div class="row">
+            <label class="sex" for="">เพศ</label>
+            <input type="radio" id="" name="sex" value="ชาย" />
+            <label for="">ชาย</label>
+            <input type="radio" id="" name="sex" value="หญิง" />
+            <label for="">หญิง</label>
+            <input type="radio" id="" name="sex" value="ไม่ระบุ" />
+            <label for="">ไม่ระบุ</label>
+          </div>
+          <br />
+
+          <div class="row">
+            <label for="fileSelect">อัพโหลดรูป:</label>
+            <input type="file" name="photo" id="fileSelect" />
+          </div><br>
+
+          <div class="row">
+          <input class="buttom" type="submit" value="บันทึกข้อมูล" />
+          </div><br />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
